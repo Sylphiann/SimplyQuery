@@ -4,15 +4,15 @@
 
 <div class="search-container">
     <div class="search-title">
-        <p>{{ data }}</p>
+        <img src="static/images/image.png">
     </div>
-    <div class="search-bar">
-        <div class="search-input">
-
-        </div>
-        <div class="search-button">
-
-        </div>
+    <div class="searchbar">
+        <form class="search-form" action="/result" method="get">
+            <input type="text" name="query" placeholder="Search...">
+            <button type="submit">
+                <img src="static/images/favicon.ico" alt="Search" />
+            </button>
+        </form>
     </div>
 </div>
 

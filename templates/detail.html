@@ -3,22 +3,22 @@
 {% block page_body %}
 
 <div class="result-container">
-    <div class="result-title">
-        <p>{{ data }}</p>
+    <div class="search-title">
+        <img src="static/images/image.png">
     </div>
-    <div class="result-bar">
-        <div class="result-input">
-
-        </div>
-        <div class="result-button">
-
-        </div>
+    <div class="searchbar">
+        <form class="search-form" action="/result" method="get">
+            <input type="text" name="query" placeholder="Search...">
+            <button type="submit">
+                <img src="static/images/favicon.ico" alt="Search" />
+            </button>
+        </form>
     </div>
 </div>
 
 <div class="result-list">
     <div class="result-detail">
-
+        <p>Showing detail for query: {{ query }}</p>
     </div>
 </div>
 
