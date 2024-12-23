@@ -26,7 +26,7 @@ body {
     height: 180px;
 }
 
-.search-title {
+.search-title a {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
@@ -79,4 +79,16 @@ body {
     margin-right: -15px;
     width: 30px;
     height: 30px;
+}
+
+.result-items h3 {
+    margin-top: 30px;
+}
+
+.result-items p {
+    margin-top: -12px;
+}
+
+.result-detail {
+    width: 800px
 }

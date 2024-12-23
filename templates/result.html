@@ -4,7 +4,7 @@
 
 <div class="result-container">
     <div class="search-title">
-        <img src="static/images/image.png">
+        <a  href="/"><img src="static/images/image.png"></a>
     </div>
     <div class="searchbar">
         <form class="search-form" action="/result" method="get">
@@ -17,8 +17,14 @@
 </div>
 
 <div class="result-list">
+    <p>Showing results for query: {{ query }}</p>
     <div class="result-items">
-        <p>Showing results for query: {{ query }}</p>
+        {% for result in results %}
+            <h3><a href="/detail?query={{ result.docno }}">
+                {{ result.title }}
+            </a></h3>
+            <p>{{ result.content }}</p>
+        {% endfor %}
     </div>
 </div>
 
