@@ -26,9 +26,10 @@ class Retriever():
         result = []
         for _, row in data.iterrows():
             text = dict()
+            content = row["text"][:200]
             text["docno"] = row["docno"]
             text["title"] = row["title"]
-            text["content"] = f"{row["text"][:200]}..."
+            text["content"] = f"{content}..."
             result.append(text)
         return result
 
